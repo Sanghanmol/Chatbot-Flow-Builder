@@ -1,43 +1,103 @@
-# Chatbot Flow Builder
+# 🤖 BiteSpeed Chatbot Flow Builder
 
-A simple and extensible **Chatbot Flow Builder** built with **React** and **React Flow**.  
-It allows you to create flows by connecting multiple message nodes, edit node text, and save the flow.
-
----
-
-## Features
-
-1. **Text Node**
-   - Represents a message in the chatbot flow.
-   - Multiple Text Nodes can exist in one flow.
-   - Drag from **Nodes Panel** to add to canvas.
-
-2. **Nodes Panel**
-   - Contains all types of nodes supported by the builder.
-   - Currently supports **Message Node**.
-   - Extensible for future node types.
-
-3. **Edge**
-   - Connects two nodes together.
-   - Each **source handle** can only have one outgoing edge.
-   - Each **target handle** can accept multiple incoming edges.
-
-4. **Source & Target Handles**
-   - Source handle on the right.
-   - Target handle on the left.
-   - Drag from source handle to connect nodes.
-
-5. **Settings Panel**
-   - Appears when a node is selected.
-   - Allows editing the text of a selected Text Node.
-
-6. **Save Button**
-   - Saves the flow.
-   - Validates that nodes do not have empty target handles (if multiple nodes exist).
-   - Shows errors for invalid flows.
-
-7. **Responsive UI**
-   - Clean, modern design using solid green and cyan colors: `#10B981` & `#06B6D4`.
+An interactive chatbot flow builder with a **drag-and-drop UI**, node connection logic, and a modern panel-based interface.  
+Built with **React + React Flow + MUI**.
 
 ---
 
+## 📌 Overview
+BiteSpeed Flow Builder allows users to:
+
+✅ Create **Text Nodes** representing messages  
+✅ Drag and drop nodes from the **Nodes Panel**  
+✅ Connect nodes using **edges** to define conversation flow  
+✅ Edit node text via **Settings Panel**  
+✅ Save flows with **validation for incomplete connections**
+
+---
+
+## 🚀 Features
+
+- 📍 **Text Node**  
+  - Represents a chatbot message  
+  - Multiple nodes can exist in a single flow  
+  - Added to canvas via drag-and-drop
+
+- 🖇 **Edges**  
+  - Connect nodes to define flow order  
+  - Source handle: **only one outgoing edge allowed**  
+  - Target handle: **can have multiple incoming edges**
+
+- 🛠 **Settings Panel**  
+  - Appears when a node is selected  
+  - Edit node text dynamically
+
+- 💾 **Save Button**  
+  - Validates flow  
+  - Shows error if multiple nodes have empty target handles  
+  - Logs nodes & edges to console on successful save
+
+- 🎨 **UI**  
+  - Color-coded nodes & handles  
+  - Panels for node selection and settings  
+  - Responsive and modern layout
+
+---
+
+## 🖥️ Tech Stack
+
+- ⚛️ React + Vite   
+- 🔗 React Flow  
+- 💾 Local state management (useState, useRef)  
+- 📝 UUID for unique node IDs  
+
+---
+
+## 📸 UI Preview
+
+- **Left panel:** Nodes Panel for dragging new nodes  
+- **Canvas:** Main flow area to place & connect nodes  
+- **Right panel:** Settings Panel for editing selected node  
+- **Edges:** Connect nodes to define chatbot conversation
+
+---
+
+## 🛠️ Installation & Run
+
+# Clone the repo
+- git clone https://github.com/Sanghanmol/Chatbot-Flow-Builder.git
+- cd my-app
+
+# Install dependencies
+npm install
+
+# Run the app
+npm run dev
+
+---
+
+## 🚀 Usage
+
+1️⃣ Drag a **Message node** from Nodes Panel to canvas  
+2️⃣ Drag from a node’s **source handle** to another node’s **target handle** to connect them  
+3️⃣ Select a node to edit text via **Settings Panel**  
+4️⃣ Click **Save** → Validates flow and logs nodes & edges  
+5️⃣ Add multiple nodes and connect freely to build chatbot flow
+
+---
+
+## 🎨 UI Highlights
+
+✅ Drag-and-drop **Nodes Panel**  
+✅ **Color-coded nodes** for easy identification  
+✅ **Edges** clearly show connections  
+✅ Responsive **canvas & panels**  
+✅ **Settings Panel** for live node editing
+
+---
+
+### 📜 License
+
+MIT License © 2025 - Created with ❤️ by Anmol Sangha
+
+---
