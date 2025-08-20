@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/Sanghanmol/Chatbot-Flow-Builder",
+  "homepage": "https://Sanghanmol.github.io/Chatbot-Flow-Builder",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
