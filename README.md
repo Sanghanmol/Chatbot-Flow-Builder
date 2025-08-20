@@ -47,7 +47,6 @@ BiteSpeed Flow Builder allows users to:
 ## 🖥️ Tech Stack
 
 - ⚛️ React + Vite  
-- 🎨 Material-UI (MUI)  
 - 🔗 React Flow  
 - 💾 Local state management (useState, useRef)  
 - 📝 UUID for unique node IDs  
