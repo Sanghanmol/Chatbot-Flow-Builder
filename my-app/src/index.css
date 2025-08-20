@@ -1,0 +1,109 @@
+/* Reset & base styles */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background: #f0fdfa; /* very light green-blue tint */
+  color: #111827;
+}
+
+/* App layout */
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #10B981, #06B6D4);
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Container holds canvas + right panel */
+.container {
+  display: flex;
+  height: calc(100vh - 56px);
+}
+
+/* Canvas area */
+.canvas {
+  flex: 1;
+  position: relative;
+  background: #e0f2f1; /* soft green-blue background */
+}
+
+/* Right panel */
+.panel {
+  width: 320px;
+  border-left: 1px solid #b2f5ea; /* light border */
+  padding: 16px;
+  background: #ffffff;
+  box-shadow: -2px 0 4px rgba(0,0,0,0.05);
+}
+
+/* Node panel / settings panel */
+.node-panel, .settings-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Draggable node items */
+.palette-item {
+  padding: 14px;
+  border: 1px dashed #06B6D4;
+  border-radius: 6px;
+  background: #ffffff;
+  cursor: grab;
+  user-select: none;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.palette-item:hover {
+  background: #10B981;
+  color: white;
+  border-color: #10B981;
+}
+
+/* Save button */
+/* Save button */
+.save-btn {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #10B981;
+  background:#E6FFFA;
+  color: #10B981;
+  cursor: pointer;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+.save-btn:hover {
+  opacity: 0.9;
+}
+
+/* Error banner */
+.error-banner {
+  background: #fef3f2;
+  color: #9b2c2c;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin: 8px 16px;
+  text-align: center;
+}
+
+/* React Flow wrapper sizing */
+.reactflow-wrapper {
+  width: 100%;
+  height: 100%;
+}

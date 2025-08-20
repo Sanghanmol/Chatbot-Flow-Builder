@@ -1,0 +1,18 @@
+/* App.css */
+
+.app-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f5f7fa;
+}
+
+.app-header {
+  padding: 16px 24px;
+  background: linear-gradient(90deg, #10B981, #06B6D4);
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+}
