@@ -66,8 +66,8 @@ BiteSpeed Flow Builder allows users to:
 
 # Clone the repo
 - git clone https://github.com/Sanghanmol/Chatbot-Flow-Builder.git
-- cd BiteSpeed-Chatbot-Flow
-
+- cd my-app
+  
 # Install dependencies
 npm install
 
